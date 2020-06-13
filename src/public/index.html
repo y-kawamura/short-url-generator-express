@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🍰URL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class='title'>🍰URL</h1>
+  <main id='app'>
+    <form @submit.prevent=createURL>
+      <div class="form-control">
+        <label for="url">URL:</label>        
+        <input type="text" v-model='url'>
+      </div>
+      <div class="form-control">
+        <label for="slug">Slug:</label>
+        <input type="text" v-model='slug'>
+      </div>
+      <div class="form-control">
+        <button type="submit">Create</button>
+      </div>
+    </form>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+  <script src="main.js"></script>
+</body>
+</html>
